@@ -1,0 +1,80 @@
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   39          5   77516  ...              40               1       0
+1   50          1   83311  ...              13               1       0
+2   38          0  215646  ...              40               1       0
+3   53          0  234721  ...              40               1       0
+4   28          0  338409  ...              40               0       0
+
+[5 rows x 15 columns]
+7508 30162
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   25          0  226802  ...              40               1       0
+1   38          0   89814  ...              50               1       0
+2   28          4  336951  ...              40               1       1
+3   44          0  160323  ...              40               1       1
+5   34          0  198693  ...              30               1       0
+
+[5 rows x 15 columns]
+3700 15060
+Pretraining the model for 10 epochs
+Epoch: 0 Loss: 0.44969596473847406 Accuracy: 0.7832371858630064 Epoch Time: 0.4583628177642822
+Epoch: 1 Loss: 0.33023970271066083 Accuracy: 0.8463629732776341 Epoch Time: 0.45031094551086426
+Epoch: 2 Loss: 0.323613936491942 Accuracy: 0.8506067236920629 Epoch Time: 0.47119832038879395
+Epoch: 3 Loss: 0.32129033844349747 Accuracy: 0.8513029639944301 Epoch Time: 0.45554351806640625
+Epoch: 4 Loss: 0.33067936500755407 Accuracy: 0.850706186592401 Epoch Time: 0.46715378761291504
+Epoch: 5 Loss: 0.32690348943411296 Accuracy: 0.8516013526954446 Epoch Time: 0.46200990676879883
+Epoch: 6 Loss: 0.32372563963724393 Accuracy: 0.8528943703998408 Epoch Time: 0.45702552795410156
+Epoch: 7 Loss: 0.32526858656083124 Accuracy: 0.851070883893641 Epoch Time: 0.4575517177581787
+Epoch: 8 Loss: 0.32155576916569373 Accuracy: 0.8538226908029971 Epoch Time: 0.4579277038574219
+Epoch: 9 Loss: 0.3164661438283274 Accuracy: 0.8519992042967973 Epoch Time: 0.456510066986084
+Epoch: 0 Loss: 1.7126453963376709 Accuracy: 0.8564750348120151 Epoch Time: 1.9824585914611816 Loss_1: 0.313998772052385 Loss_2: 1.398646625421815
+Epoch: 1 Loss: 1.705800679780669 Accuracy: 0.856010874610437 Epoch Time: 2.428072214126587 Loss_1: 0.3130089997992677 Loss_2: 1.3927916803602445
+Epoch: 2 Loss: 1.7036509715904624 Accuracy: 0.8560771832106624 Epoch Time: 2.4472861289978027 Loss_1: 0.313012990153442 Loss_2: 1.3906379852254511
+Epoch: 3 Loss: 1.7033704771833904 Accuracy: 0.8562098004111133 Epoch Time: 2.4329211711883545 Loss_1: 0.3118322024406013 Loss_2: 1.3915382765107236
+Epoch: 4 Loss: 1.7000729562872547 Accuracy: 0.8571049665141569 Epoch Time: 2.4569809436798096 Loss_1: 0.31211851461459017 Loss_2: 1.3879544416726646
+Epoch: 5 Loss: 1.7005322383621992 Accuracy: 0.856972349313706 Epoch Time: 2.258861780166626 Loss_1: 0.31141417726116666 Loss_2: 1.389118058196569
+Epoch: 6 Loss: 1.6967016791893264 Accuracy: 0.8561766461110006 Epoch Time: 2.3924078941345215 Loss_1: 0.31140289910263935 Loss_2: 1.3852987774347856
+Epoch: 7 Loss: 1.6938774959515717 Accuracy: 0.8561766461110006 Epoch Time: 2.441802978515625 Loss_1: 0.31083216859122453 Loss_2: 1.38304532281423
+Epoch: 8 Loss: 1.693398458472753 Accuracy: 0.8575359724156223 Epoch Time: 2.4443647861480713 Loss_1: 0.31138683741880674 Loss_2: 1.3820116206751032
+Epoch: 9 Loss: 1.6922149254103838 Accuracy: 0.8567071149128042 Epoch Time: 2.1411173343658447 Loss_1: 0.31002962033627396 Loss_2: 1.3821853126509716
+3423.0 3700.0 12801 15060
+fp= 991 ,fn= 1268 ,tp= 2432 ,tn= 10369
+Test Accuracy: 0.85
+3423.0
+Race:
+Equalised Odds:
+    Y                race  R        EO
+0   1               White  1  0.657660
+1   1  Asian-Pac-Islander  1  0.752066
+2   1  Amer-Indian-Eskimo  1  0.368421
+3   1               Other  1  0.500000
+4   1               Black  1  0.636905
+5   1           Non-White  1  0.752066
+6   0               White  1  0.090919
+7   0  Asian-Pac-Islander  1  0.149826
+8   0  Amer-Indian-Eskimo  1  0.030769
+9   0               Other  1  0.030612
+10  0               Black  1  0.054706
+11  0           Non-White  1  0.149826
+Predictive Parity:
+    Y                race  R        PP
+0   1               White  1  0.717293
+1   1  Asian-Pac-Islander  1  0.679104
+2   1  Amer-Indian-Eskimo  1  0.636364
+3   1               Other  1  0.800000
+4   1               Black  1  0.611429
+5   1           Non-White  1  0.679104
+6   0               White  1  0.282707
+7   0  Asian-Pac-Islander  1  0.320896
+8   0  Amer-Indian-Eskimo  1  0.363636
+9   0               Other  1  0.200000
+10  0               Black  1  0.388571
+11  0           Non-White  1  0.320896
+Demographic Parity:
+                    A  R        DP
+0               White  1  0.238088
+1  Asian-Pac-Islander  1  0.328431
+2  Amer-Indian-Eskimo  1  0.073826
+3               Other  1  0.122951
+4               Black  1  0.124026
+5           Non-White  1  0.328431

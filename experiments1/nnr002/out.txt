@@ -1,0 +1,64 @@
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   39          5   77516  ...              40               1       0
+1   50          1   83311  ...              13               1       0
+2   38          0  215646  ...              40               1       0
+3   53          0  234721  ...              40               1       0
+4   28          0  338409  ...              40               0       0
+
+[5 rows x 15 columns]
+7508 30162
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   25          0  226802  ...              40               1       0
+1   38          0   89814  ...              50               1       0
+2   28          4  336951  ...              40               1       1
+3   44          0  160323  ...              40               1       1
+5   34          0  198693  ...              30               1       0
+
+[5 rows x 15 columns]
+3700 15060
+Epoch: 0 Loss: 1.0194225710327343 Accuracy: 0.7466016842384458 Epoch Time: 0.7507719993591309 Loss_1: 0.5425665317955664 Loss_2: 0.47685604555121924
+Epoch: 1 Loss: 0.723870757272688 Accuracy: 0.7954379683044891 Epoch Time: 0.7288370132446289 Loss_1: 0.3827162569357177 Loss_2: 0.34115449755878774
+Epoch: 2 Loss: 0.6457944093114238 Accuracy: 0.8487169285856375 Epoch Time: 0.7525877952575684 Loss_1: 0.3423402165457354 Loss_2: 0.3034541969329624
+Epoch: 3 Loss: 0.6195430813704507 Accuracy: 0.8534248392016445 Epoch Time: 0.7691655158996582 Loss_1: 0.3293753427974248 Loss_2: 0.29016773806790175
+Epoch: 4 Loss: 0.6092053725052688 Accuracy: 0.8548173198063789 Epoch Time: 0.7525441646575928 Loss_1: 0.32425755009812823 Loss_2: 0.2849478210180493
+Epoch: 5 Loss: 0.6036575014813471 Accuracy: 0.8567734235130297 Epoch Time: 0.7301292419433594 Loss_1: 0.32127503293045495 Loss_2: 0.2823824699399835
+Epoch: 6 Loss: 0.599728006427571 Accuracy: 0.8577348982162987 Epoch Time: 0.730003833770752 Loss_1: 0.3196674682578798 Loss_2: 0.2800605380434101
+Epoch: 7 Loss: 0.5964338148044328 Accuracy: 0.8579669783170877 Epoch Time: 0.7341508865356445 Loss_1: 0.31819597252849807 Loss_2: 0.2782378442964311
+Epoch: 8 Loss: 0.594109580931017 Accuracy: 0.8588952987202441 Epoch Time: 0.7411179542541504 Loss_1: 0.3166863281848067 Loss_2: 0.27742325261992923
+Epoch: 9 Loss: 0.5914876137749624 Accuracy: 0.8597904648232876 Epoch Time: 0.7628777027130127 Loss_1: 0.31506776355080685 Loss_2: 0.2764198493401883
+3049.0 3700.0 12855 15060
+fp= 777 ,fn= 1428 ,tp= 2272 ,tn= 10583
+Test Accuracy: 0.853585657370518
+3049.0
+Race:
+Equalised Odds:
+   Y                race  R        EO
+0  1               White  1  0.616093
+1  1  Asian-Pac-Islander  1  0.685950
+2  1  Amer-Indian-Eskimo  1  0.578947
+3  1               Other  1  0.416667
+4  1               Black  1  0.553571
+5  0               White  1  0.073735
+6  0  Asian-Pac-Islander  1  0.090592
+7  0  Amer-Indian-Eskimo  1  0.023077
+8  0               Other  1  0.020408
+9  0               Black  1  0.030571
+Predictive Parity:
+   Y                race  R        PP
+0  1               White  1  0.745598
+1  1  Asian-Pac-Islander  1  0.761468
+2  1  Amer-Indian-Eskimo  1  0.785714
+3  1               Other  1  0.833333
+4  1               Black  1  0.709924
+5  0               White  1  0.254402
+6  0  Asian-Pac-Islander  1  0.238532
+7  0  Amer-Indian-Eskimo  1  0.214286
+8  0               Other  1  0.166667
+9  0               Black  1  0.290076
+Demographic Parity:
+                    A  R        DP
+0               White  1  0.214572
+1  Asian-Pac-Islander  1  0.267157
+2  Amer-Indian-Eskimo  1  0.093960
+3               Other  1  0.098361
+4               Black  1  0.092842

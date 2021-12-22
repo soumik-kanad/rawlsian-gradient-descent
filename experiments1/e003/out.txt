@@ -1,0 +1,49 @@
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   39          5   77516  ...              40               1       0
+1   50          1   83311  ...              13               1       0
+2   38          0  215646  ...              40               1       0
+3   53          0  234721  ...              40               1       0
+4   28          0  338409  ...              40               0       0
+
+[5 rows x 15 columns]
+7508 30162
+   age  workclass  fnlwgt  ...  hours-per-week  native-country  income
+0   25          0  226802  ...              40               1       0
+1   38          0   89814  ...              50               1       0
+2   28          4  336951  ...              40               1       1
+3   44          0  160323  ...              40               1       1
+5   34          0  198693  ...              30               1       0
+
+[5 rows x 15 columns]
+3700 15060
+Epoch: 0 Loss: 0.16846677376809766 Accuracy: 0.7264770240700219 Epoch Time: 0.5789496898651123 Loss_2: 0.16846677376809766
+Epoch: 1 Loss: 0.11700926178087623 Accuracy: 0.7510775147536636 Epoch Time: 0.5060515403747559 Loss_2: 0.11700926178087623
+Epoch: 2 Loss: 0.106318069179937 Accuracy: 0.7510775147536636 Epoch Time: 0.512570858001709 Loss_2: 0.106318069179937
+Epoch: 3 Loss: 0.09691452067661083 Accuracy: 0.7510775147536636 Epoch Time: 0.5036253929138184 Loss_2: 0.09691452067661083
+Epoch: 4 Loss: 0.0846168665941489 Accuracy: 0.7510775147536636 Epoch Time: 0.5087795257568359 Loss_2: 0.0846168665941489
+Epoch: 5 Loss: 0.07437334114969787 Accuracy: 0.7543266361647105 Epoch Time: 0.5088715553283691 Loss_2: 0.07437334114969787
+Epoch: 6 Loss: 0.06803601255671958 Accuracy: 0.7773357204429414 Epoch Time: 0.5130338668823242 Loss_2: 0.06803601255671958
+Epoch: 7 Loss: 0.06457901111472461 Accuracy: 0.8291227372190173 Epoch Time: 0.5101795196533203 Loss_2: 0.06457901111472461
+Epoch: 8 Loss: 0.06266441229352002 Accuracy: 0.8367813805450567 Epoch Time: 0.5098309516906738 Loss_2: 0.06266441229352002
+Epoch: 9 Loss: 0.06160109258114786 Accuracy: 0.8395331874544129 Epoch Time: 0.5098104476928711 Loss_2: 0.06160109258114786
+2565.0 3700.0 12661 15060
+fp= 632 ,fn= 1767 ,tp= 1933 ,tn= 10728
+Test Accuracy: 0.8407038512616202
+2565.0
+Sex:
+Equalised Odds:
+   Y     sex  R        EO
+0  1  Female  1  0.549372
+1  1    Male  1  0.517658
+2  0  Female  1  0.030533
+3  0    Male  1  0.071245
+Predictive Parity:
+   Y     sex  R        PP
+0  1  Female  1  0.697039
+1  1    Male  1  0.765287
+2  0  Female  1  0.302961
+3  0    Male  1  0.234713
+Demographic Parity:
+        A  R        DP
+0  Female  1  0.089355
+1    Male  1  0.209520
